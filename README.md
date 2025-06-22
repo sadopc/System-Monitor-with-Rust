@@ -4,6 +4,9 @@
 
 Bu proje, sisteminizdeki CPU, bellek, disk ve işlem bilgilerini canlı olarak gösteren modern bir terminal kullanıcı arayüzü sunar.
 
+![resim](https://github.com/user-attachments/assets/e59b20a3-55d4-4cfa-ae3d-572314b05fdd)
+
+
 ## ✨ Özellikler
 
 - Gerçek zamanlı sistem bilgisi takibi:
