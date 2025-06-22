@@ -1,0 +1,31 @@
+[package]
+name = "rust-system-monitor"
+version = "0.1.0"
+edition = "2021"
+
+# Dependency'lerimizi buraya ekliyoruz
+# Her bir crate'in neden gerekli olduğunu açıklayalım:
+
+[dependencies]
+# Sistem bilgilerini cross-platform bir şekilde toplamak için
+# CPU çekirdekleri, RAM kullanımı, process bilgileri gibi...
+sysinfo = "0.29.11"      # veya "0.29.10"
+
+
+# Modern terminal UI framework'ü - widget tabanlı tasarım
+# Grafikler, tablolar, progress bar'lar için
+ratatui = "0.26"
+
+# Cross-platform terminal kontrolü ve input handling
+# Klavye olaylarını yakalamak ve terminal özelliklerini kullanmak için
+crossterm = { version = "0.27", features = ["event-stream"] }
+
+# Asenkron programlama için - sistem verilerini periyodik olarak güncellemek
+# UI'nin donmaması için arka planda veri toplama
+tokio = { version = "1.0", features = ["full"] }
+
+# Hata yönetimi için - Rust'ta error handling'i kolaylaştırır
+anyhow = "1.0"
+
+# DateTime işlemleri için - uptime, log timestamp'leri vs.
+chrono = { version = "0.4", features = ["serde"] }
